@@ -34,7 +34,7 @@ most_people_alive = max(people_alive_by_year.values())
 
 # List of years with the most people alive
 years_with_most_people = [year for year in range(1900, 2001) if people_alive_by_year[year] == most_people_alive]
-
+print(years_with_most_people)
 
 # Create and show a bar graph with the number of people alive each year
 plt.bar(people_alive_by_year.keys(), people_alive_by_year.values())
