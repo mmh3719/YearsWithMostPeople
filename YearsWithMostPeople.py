@@ -9,6 +9,7 @@ people = []
 # Variable to hold the size of the population
 population_size = 100
 
+
 # Loop to pseudo-randomly generate birth and death years for the population
 for i in range(population_size):
     birth = rand.randint(1900, 2000)    # Randomly select the birth year from 1900-2000
@@ -35,6 +36,6 @@ most_people_alive = max(people_alive_by_year.values())
 years_with_most_people = [year for year in range(1900, 2001) if people_alive_by_year[year] == most_people_alive]
 
 
-# Create a show a bar graph with the number of people alive each year
+# Create and show a bar graph with the number of people alive each year
 plt.bar(people_alive_by_year.keys(), people_alive_by_year.values())
 plt.show()
